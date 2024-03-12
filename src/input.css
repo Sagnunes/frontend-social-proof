@@ -58,8 +58,9 @@ section .ranking .score{
 
 @media (min-width: 1025px) {
     body {
-        background-image: url("../images/bg-pattern-top-desktop.svg");
+        background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
         background-repeat: no-repeat;
+        background-position: right top, left bottom;
     }
     .card:nth-child(2){
         margin-top: 32px;
