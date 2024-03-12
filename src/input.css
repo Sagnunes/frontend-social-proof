@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: right top, left bottom;
+
+}
+
+h1{
+    @apply font-league-spartan font-bold text-[40px] leading-8 text-magenta-very-dark md:text-[56px] md:leading-[48px] md:tracking-[-2px]
+}
+
+p{
+    @apply font-league-spartan font-medium text-[19px] leading-6 tracking-[-0.63px] text-magenta-dark-grayish md:text-[25px]
+}
+
+section .ranking{
+    @apply bg-magenta-light-grayish w-[327px] h-[78px] rounded-lg flex flex-col justify-center items-center md:w-full md:flex-row md:items-center md:justify-around md:h-[56px]
+}
+
+section .ranking h2{
+    @apply font-league-spartan font-bold text-[17px] text-magenta-very-dark
+}
+
+section .ranking .score{
+    @apply flex flex-row space-x-[8px] mb-[15px] md:mb-[6.5px]
+}
+
+.card{
+    @apply flex flex-col bg-magenta-very-dark px-8 py-10 rounded-lg w-[350px] h-[234px]
+}
+
+.card h3{
+    @apply font-league-spartan font-bold text-white text-[17px]
+}
+
+.card h4{
+    @apply font-league-spartan font-normal text-softPink text-[17px]
+}
+
+.card blockquote{
+    @apply font-league-spartan font-medium text-[17px] leading-[22px] tracking-[-0.3px] text-white mt-[23px]
+}
+
+.card:nth-child(2){
+    margin-top: 16px;
+}
+
+.card:nth-child(3){
+    margin-top: 16px;
+}
+
+@media (min-width: 1025px) {
+    body {
+        background-image: url("../images/bg-pattern-top-desktop.svg");
+        background-repeat: no-repeat;
+    }
+    .card:nth-child(2){
+        margin-top: 32px;
+    }
+
+    .card:nth-child(3){
+        margin-top: 64px;
+    }
+
+}
